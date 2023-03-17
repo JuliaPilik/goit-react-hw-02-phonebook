@@ -48,7 +48,7 @@ export class App extends React.Component {
   }
     
   render() {
-    const { contacts, filter } = this.state;
+    const { filter } = this.state;
     const normalizedFilter = this.state.filter.toLowerCase();
     const visibleContacts = this.state.contacts.filter(contact => contact.name.toLowerCase().includes(normalizedFilter));
    // console.log(filter);
